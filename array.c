@@ -1,10 +1,21 @@
-void main()
+main()
 {
-int array[]={1,2,3,4,5,6,7,array[m]};
-int i,n=7;
-printf("the array element:\n");
-for (i=1;i<=7;i++)
-{
-    printf("array[%d]=%d\n",i,array[i]);
-}
+    int i,large,small;
+    int a[7];
+    for(i=1;i<5;i++)
+    {
+    printf("enter any number");
+    scanf("%d",&a[i]);
+        }
+        small=a[0];
+        large=a[0];
+        for(i=1;i<5;i++)
+        {
+            if(a[i]<small)
+                small=a[i];
+            if(a[i]>large)
+                large=a[i];
+        }
+        printf("small number is=%d",small);
+        printf("large number is=%d",large);
 }
